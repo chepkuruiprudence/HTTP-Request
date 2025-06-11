@@ -70,4 +70,12 @@ To fulfill your request, the application server may need to query a database. Th
 ## Response
 The HTTP response makes its way back through the channels, reaching your browser which then renders the HTML, CSS, and JavaScript to display the webpage we all know and love as Google.
 
+- **HTTP Response Headers:** The server includes headers like `Content-Type`, `Set-Cookie`, `Cache-Control`, etc.
+- **Rendering Pipeline:** The browser parses HTML, downloads linked resources (CSS, JS, images), builds the DOM and CSSOM, executes JavaScript, and finally paints pixels to the screen.
+- **Progressive Rendering:** Modern browsers may display parts of the page as soon as they are available, improving perceived performance.
+
+---
+
+This detailed journey highlights the complexity and efficiency of the modern web, where multiple systems and protocols work together seamlessly to deliver content in milliseconds.
+
 
