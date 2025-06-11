@@ -2,8 +2,28 @@
 
 When you type https://www.google.com into your browser and hit Enter, a fascinating journey begins - transcending various layers of the web stack before the desired webpage graces your screen.
 
+It entails the following steps:
+I will be covering this topic;
+
+1. DNS request
+2. TCP/IP
+3. Firewall
+4. HTTPS/SSL
+5. Load balancer
+6. Web server
+7. Application server
+8. Database
+9. Response
+
 ## The initiation: DNS Request
 The browser seeks to transform the human-readable domain name (www.google.com) into an IP address. This is done through a DNS (Domain Name System) request. The browser checks its local cache first, then queries the configured DNS server, which may involve multiple steps through various DNS servers until it retrieves the IP address associated with www.google.com.
+
+The steps involved in the DNS request are as follows:
+1. If the requested domain name or UR is not present in the browser’s cache, the browser makes a call to the (OS) which is your Operating system, and asks it if it has the address in its cache.
+2. If the browser doesn’t find it on the OS cache it then requests the resolver name server cache which is (IPS) Internet Service Provider to check if it has the requested address.
+If the resolver name server doesn’t find it in its cache, it asks the root name server to give it the location of the top-level domain server (TLD) such as .com or .org, etc
+3. The TLD nameserver responds with the IP address of the authoritative nameserver for the domain.
+4. If the IP address of the requested URL is available, the browser then sends a request to the server at the IP address to retrieve the webpage and now finally you see it on your screen.
 
 ## TCP/IP
 TCP (Transmission Control Protocol) and IP (Internet Protocol) are two of the primary protocols that constitute the internet. They work in conjunction to establish a link between a client and a server and facilitate the exchange of data between them. When you input "google.com" into a web browser, the browser employs TCP/IP to establish a link with the server that hosts the website.
